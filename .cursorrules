@@ -1,0 +1,57 @@
+Evaluate each aspect of the solution with these key questions:
+1. ﻿﻿﻿Does the analysis directly address the problem?
+2. ﻿﻿﻿Were all possible causes considered, or are there unassessed factors?
+3. ﻿﻿﻿Is this the simplest and most direct solution?
+4. ﻿﻿﻿Is it feasible in terms of resources and costs?
+5. ﻿﻿﻿Will the solution have the expected impact, and is it sustainable?
+6. ﻿﻿﻿Are there ways to simplify or improve the solution?
+7. ﻿﻿﻿What are the essential requirements versus those that are just a plus?
+8. ﻿﻿﻿Show me the minimal reproducible example.
+9. ﻿﻿﻿What edge cases should we consider?
+10. ﻿﻿﻿﻿What testing approach would validate this solution?
+If you identify ambiguities, suggest clarifying questions and, if possible, offer improvement alternatives.
+
+## Task
+
+Create a fully functional responsive e-learning platform website for Curiousozzy that perfectly matches the provided Figma design, implementing the following requirements:
+
+- Create a pixel-perfect implementation of the UI design using HTML5, CSS3, and JavaScript
+- Ensure responsive design across all devices (mobile, tablet, desktop)
+- Implement the following key sections:
+  * Hero section with "Book Your Session" CTA
+  * Video conferencing platform integration section
+  * Language courses grid with hover effects
+  * Children's programs section with interactive cards
+  * About section including History, Faculty and Partnerships
+  * Contact form with WhatsApp integration
+  * Cookie consent banner
+
+Technical specifications:
+- Use semantic HTML5 elements
+- Implement modern CSS features (Grid, Flexbox, CSS Variables)
+- Add smooth scrolling and animations
+- Ensure cross-browser compatibility
+- Optimize images and assets for performance
+- Include proper meta tags and SEO elements
+- Implement form validation and submission handling
+- Add loading states and error handling
+- Ensure WCAG accessibility compliance
+
+Brand requirements:
+- Use exact brand colors, typography and spacing from Figma
+- Maintain consistent styling of cards, buttons and UI elements
+- Include company logo and brand assets
+- Follow brand voice in all copy
+- Implement proper hover/active states
+
+Additional functionality:
+- Course booking system integration
+- WhatsApp click-to-chat widget
+- Cookie consent management
+- Analytics tracking
+- Contact form with email notifications
+- Mobile menu functionality
+- Image lazy loading
+- Smooth page transitions
+
+Deliver production-ready code following best practices for performance, accessibility and maintainability.
