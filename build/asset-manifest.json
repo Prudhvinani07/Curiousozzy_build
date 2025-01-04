@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Curiousozzy_build/static/css/main.fa51be72.css",
+    "main.js": "/Curiousozzy_build/static/js/main.9d4d19a3.js",
+    "index.html": "/Curiousozzy_build/index.html",
+    "main.fa51be72.css.map": "/Curiousozzy_build/static/css/main.fa51be72.css.map",
+    "main.9d4d19a3.js.map": "/Curiousozzy_build/static/js/main.9d4d19a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa51be72.css",
+    "static/js/main.9d4d19a3.js"
+  ]
+}
