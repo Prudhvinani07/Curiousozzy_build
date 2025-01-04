@@ -44,8 +44,10 @@ const TeamBoard: React.FC = () => {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 text-center">
-            Boards
+          <h2 className="text-6xl md:text-7xl font-bold tracking-tight text-primary-blue text-center mb-4">
+            <span className="bg-gradient-to-r from-primary-blue to-primary-coral bg-clip-text text-transparent">
+              Boards
+            </span>
           </h2>
           
           <div className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">

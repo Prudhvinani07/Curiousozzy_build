@@ -61,8 +61,8 @@ export default function Languages() {
     <div className="min-h-screen bg-gray-100 py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Our Languages
+          <h2 className="text-4xl font-bold text-center text-primary-blue mb-16">
+            Our <span className="text-primary-coral">Languages</span>
           </h2>
           <p className="mt-4 text-lg leading-8 text-gray-600">
             Learn from our diverse selection of language courses with expert instructors.

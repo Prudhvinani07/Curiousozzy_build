@@ -3,6 +3,7 @@
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
     "framer-motion": "latest",
+    "gh-pages": "^6.3.0",
     "lucide-react": "latest",
     "nth-check": "^2.1.1",
     "react": "^18.0.0",
