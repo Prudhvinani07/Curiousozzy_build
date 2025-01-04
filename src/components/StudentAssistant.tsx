@@ -29,22 +29,22 @@ export const SelectInput: React.FC<SelectInputProps> = ({ placeholder, icon, alt
 
 const features = [
   {
-    icon: "/icons/image.png",
+    icon: "/icons/fast.png",
     text: "Fast Student Assistant",
     alt: "Fast assistance icon"
   },
   {
-    icon: "/icons/online-classes-icon.svg",
+    icon: "/icons/high_quality.png",
     text: "High Quality Online Classes",
     alt: "Online classes icon"
   },
   {
-    icon: "/icons/help-icon.svg",
+    icon: "/icons/one_click.png",
     text: "One Click Help",
     alt: "Help icon"
   },
   {
-    icon: "/icons/satisfaction-icon.svg",
+    icon: "/icons/customer_review.png",
     text: "Customer Satisfaction",
     alt: "Satisfaction icon"
   }

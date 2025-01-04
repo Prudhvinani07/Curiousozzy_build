@@ -1,0 +1,65 @@
+export default function Home() {
+  const sections = [
+    {
+      title: 'Our History',
+      image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3',
+      description: 'Since our establishment in 2024, we have been dedicated to providing quality education to students from all over the world. We started as a small language school, and have since expanded to offer a wide range of programs in various fields. We are proud of our history and the impact we have made on the lives of our students.',
+    },
+    {
+      title: 'Our Faculty',
+      image: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3',
+      description: 'Our faculty consists of experienced educators and professionals who are passionate about their fields and committed to providing the best possible education to our students. We carefully select our faculty members based on their expertise, teaching experience, and dedication to their craft.',
+    },
+    {
+      title: 'Our Partnerships',
+      image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3',
+      description: 'We have established partnerships with leading educational institutions and organizations around the world. These partnerships allow us to offer our students unique opportunities such as study abroad programs, internships, and research collaborations. We are proud to be part of a global network of educators and learners who share our commitment to quality education.',
+    },
+    {
+      title: 'Our Community',
+      image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3',
+      description: 'Join our vibrant community of learners and educators committed to excellence in education and professional development.',
+    },
+  ];
+
+  return (
+    <div className="bg-white py-24">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center mb-16">
+          <h2 className="text-3xl font-semibold text-gray-900">
+            About Curiousozzy
+          </h2>
+          <p className="mt-4 text-lg leading-8 text-gray-600">
+            We're a dynamic group of individuals who are passionate about what we do
+            and dedicated to delivering the best results for our clients.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {sections.map((section) => (
+            <div 
+              key={section.title} 
+              className="flex flex-col sm:flex-row items-start gap-6 bg-white p-6 rounded-xl"
+            >
+              <div className="w-full sm:w-48 h-48 flex-shrink-0">
+                <img
+                  className="h-48 w-full sm:w-48 rounded-xl object-cover"
+                  src={section.image}
+                  alt={section.title}
+                />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  {section.title}
+                </h3>
+                <p className="text-gray-600 text-base leading-relaxed">
+                  {section.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
