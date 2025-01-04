@@ -31,4 +31,16 @@ export interface NavItemProps {
 export interface LogoProps {
   imageUrl: string;
   title: string;
+}
+
+export interface FeatureCardProps {
+  icon: string;
+  text: string;
+  alt: string;
+}
+
+export interface SelectInputProps {
+  placeholder: string;
+  icon: string;
+  alt: string;
 } 

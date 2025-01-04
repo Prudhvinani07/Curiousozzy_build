@@ -43,7 +43,7 @@ export const Navbar: React.FC = () => {
           {/* Logo */}
           <Logo
             imageUrl="https://cdn.builder.io/api/v1/image/assets/fa4132ae96b74be98ebea8ccbef58b81/f97096619879b9bb974b1d3321e3e5a9268b9b643dd7987cd5ce3bfec8fe55bf?apiKey=d7cd1c2741e34af9a21b86c09b36aa85&"
-            title="CuriousOzzy"
+            title="Curiousozzy"
           />
 
           {/* Mobile Menu Button */}

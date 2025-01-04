@@ -1,0 +1,123 @@
+interface TeamMember {
+  id: number;
+  name: string;
+  role: string;
+  image: string;
+  twitter: string;
+  linkedin: string;
+}
+
+const teamMembers: TeamMember[] = [
+  {
+    id: 1,
+    name: "Whitney Francis",
+    role: "Copywriter",
+    image: "/team1.jpg",
+    twitter: "#",
+    linkedin: "#",
+  },
+  {
+    id: 2,
+    name: "Leonard Krasner",
+    role: "Senior Designer",
+    image: "/team2.jpg",
+    twitter: "#",
+    linkedin: "#",
+  },
+  {
+    id: 3,
+    name: "Floyd Miles",
+    role: "Principal Designer",
+    image: "/team3.jpg",
+    twitter: "#",
+    linkedin: "#",
+  },
+  {
+    id: 4,
+    name: "Emily Selman",
+    role: "VP, User Experience",
+    image: "/team4.jpg",
+    twitter: "#",
+    linkedin: "#",
+  },
+  {
+    id: 5,
+    name: "Kristin Watson",
+    role: "VP, Human Resources",
+    image: "/team5.jpg",
+    twitter: "#",
+    linkedin: "#",
+  },
+  {
+    id: 6,
+    name: "Emma Dorsey",
+    role: "Senior Developer",
+    image: "/team6.jpg",
+    twitter: "#",
+    linkedin: "#",
+  },
+];
+
+export default function Home() {
+  return (
+    <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:max-w-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 text-center">
+            Meet our leadership
+          </h2>
+          <p className="mt-6 text-lg leading-8 text-gray-600 text-center">
+            We're a dynamic group of individuals who are passionate about what we do and
+            dedicated to delivering the best results for our clients.
+          </p>
+          
+          <div className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+            {teamMembers.map((member) => (
+              <div key={member.id} className="text-center">
+                <div className="relative mx-auto h-40 w-40 overflow-hidden rounded-full">
+                  <img
+                    className="h-full w-full object-cover"
+                    src={member.image}
+                    alt={member.name}
+                  />
+                </div>
+                <h3 className="mt-6 text-lg font-semibold leading-7 tracking-tight text-gray-900">
+                  {member.name}
+                </h3>
+                <p className="text-sm leading-6 text-gray-600">{member.role}</p>
+                <div className="mt-4 flex justify-center gap-4">
+                  <a
+                    href={member.twitter}
+                    className="text-gray-400 hover:text-gray-500"
+                  >
+                    <span className="sr-only">X (Twitter)</span>
+                    <svg
+                      className="h-5 w-5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                  </a>
+                  <a
+                    href={member.linkedin}
+                    className="text-gray-400 hover:text-gray-500"
+                  >
+                    <span className="sr-only">LinkedIn</span>
+                    <svg
+                      className="h-5 w-5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

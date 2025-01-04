@@ -1,25 +1,13 @@
 import * as React from "react";
 import { Navbar } from "./components/Navbar";
 import { EducationCard } from "./components/EducationCard";
-import { FeatureItem } from "./components/FeatureItem";
 import { AboutSection } from "./components/AboutSection";
 import { ContactForm } from "./components/ContactForm";
 import { VideoBackground } from "./components/VideoBackground";
+import { StudentAssistant } from "./components/StudentAssistant";
+import TeamBoard from "./components/TeamBoard";
+import Languages from "./components/Languages";
 import { FormData } from "./types";
-
-const cardData = [
-  { title: "English for Beginners", imageSrc: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=1471&auto=format&fit=crop" },
-  { title: "Business Spanish", imageSrc: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&w=1470&auto=format&fit=crop" },
-  { title: "German Culture", imageSrc: "https://images.unsplash.com/photo-1527866959252-deab85ef7d1b?q=80&w=1470&auto=format&fit=crop" },
-  { title: "French Cuisine", imageSrc: "https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=1470&auto=format&fit=crop" }
-];
-
-const features = [
-  { icon: "/icons/fast.svg", text: "Fast Student Assistant" },
-  { icon: "/icons/quality.svg", text: "High Quality Classes" },
-  { icon: "/icons/help.svg", text: "24/7 Support" },
-  { icon: "/icons/satisfaction.svg", text: "100% Satisfaction" }
-];
 
 const aboutSections = [
   {
@@ -77,32 +65,13 @@ const App: React.FC = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-primary-blue mb-16">
-            Why Choose <span className="text-primary-coral">CuriousOzzy</span>
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <FeatureItem key={index} {...feature} />
-            ))}
-          </div>
-        </div>
-      </section>
+      <StudentAssistant />
 
-      {/* Courses Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-primary-blue mb-16">
-            Popular <span className="text-primary-coral">Courses</span>
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {cardData.map((card, index) => (
-              <EducationCard key={index} {...card} />
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Team Board Section */}
+      <TeamBoard />
+
+      {/* Languages Section */}
+      <Languages />
 
       {/* About Section */}
       <section className="py-20 bg-white">

@@ -12,10 +12,8 @@ module.exports = {
         'primary-mint': '#95E1D3',
       },
       fontFamily: {
-        'spartan': ['"League Spartan"', 'sans-serif'],
-      },
-      fontWeight: {
-        black: '900',
+        'poppins': ['Poppins', 'sans-serif'],
+        // Add more custom fonts here
       }
     },
   },
