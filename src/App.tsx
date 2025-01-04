@@ -152,7 +152,7 @@ const App: React.FC = () => {
           />
         </div>
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Contact sales</h2>
+          <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Contact Us</h2>
           <p className="mt-2 text-lg/8 text-gray-600">Feel free to contact us for any questions or inquiries.</p>
         </div>
         <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
@@ -308,9 +308,11 @@ const App: React.FC = () => {
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 <li><a href="#" className="text-white/70 hover:text-white">Home</a></li>
-                <li><a href="#" className="text-white/70 hover:text-white">Courses</a></li>
-                <li><a href="#" className="text-white/70 hover:text-white">About</a></li>
-                <li><a href="#" className="text-white/70 hover:text-white">Contact</a></li>
+                <li><a href="#" className="text-white/70 hover:text-white">Boards</a></li>
+                <li><a href="#" className="text-white/70 hover:text-white">Languages</a></li>
+                <li><a href="#" className="text-white/70 hover:text-white">Children Program</a></li>
+                <li><a href="#" className="text-white/70 hover:text-white">About Us</a></li>
+                <li><a href="#" className="text-white/70 hover:text-white">Contact Us</a></li>
               </ul>
             </div>
             <div>

@@ -51,8 +51,8 @@ const features = [
 ];
 
 export const StudentAssistant: React.FC = () => (
-  <main className="min-h-screen bg-gradient-to-b from-cyan-400 to-cyan-500">
-    <section className="container mx-auto px-4 py-8 pb-0">
+  <main className="bg-gradient-to-b from-cyan-400 to-cyan-500">
+    <section className="container mx-auto px-4 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((feature, index) => (
           <FeatureCard
@@ -66,7 +66,7 @@ export const StudentAssistant: React.FC = () => (
         ARE YOU READY? LEARN MORE TODAY!
       </h1>
       
-      <form className="max-w-4xl mx-auto flex flex-col md:flex-row gap-6 items-center justify-center">
+      <form className="max-w-4xl mx-auto flex flex-col md:flex-row gap-6 items-center justify-center mb-12">
         <input
           type="email"
           placeholder="EMAIL ADDRESS"
